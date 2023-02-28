@@ -1,0 +1,81 @@
+.choosebankMainSize {
+  width: 930px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+}
+.titleChooseBank {
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: 0.3s;
+}
+.titleChooseBank:hover {
+  color: chocolate;
+  transition: 0.3s;
+  border-bottom: 2px solid chocolate;
+}
+.activeBankCard {
+  color: chocolate !important;
+  transition: 0.3s;
+  border-bottom: 2px solid chocolate;
+}
+.subMainSizeChooseBank {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bankCardContainer {
+  margin-top: 20px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+.BankCard {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 70px;
+  display: flex;
+}
+.BankCard:hover {
+  background-color: aliceblue;
+}
+.BankCard:active {
+  transform: translateY(2px);
+}
+.lefthandbankcard {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  img {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 55px;
+  }
+  div {
+    margin-left: 20px;
+  }
+}
+.righthandbankcard {
+  width: 20%;
+  height: 100%;
+}
+.LoaderChooseBank {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(241, 241, 241, 0.5);
+}

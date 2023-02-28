@@ -1,0 +1,132 @@
+.InfoTicker {
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  // flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 50px;
+
+  // background-position: center;
+  // background-size: cover;
+  // padding: 0px 0px 100px 0px;
+  .mainSize {
+    width: 1200px;
+    height: 150px;
+    // background-color: aqua;
+    .subheader {
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #000000;
+      b {
+        color: black;
+      }
+      .ThanhVien:hover {
+        // color: white;
+        color: #ee6a31;
+        cursor: pointer;
+        -webkit-transition: all 0.5s;
+      }
+      b:hover {
+        color: #d6997e;
+        cursor: pointer;
+        -webkit-transition: all 0.5s;
+      }
+      i:hover {
+        color: #ee6a31 !important;
+      }
+      i {
+        margin: 0px 7px 0px 4px;
+      }
+    }
+    .menuInfo {
+      width: 100%;
+      margin-top: 20px;
+      height: 40px;
+      display: flex;
+      // background-color: #d6997e;
+      // border-bottom: 1px solid #6C7193;
+      span {
+        // display: block;
+        font-weight: bolder;
+        margin-right: 7px;
+        font-size: 25px;
+        color: #000000;
+      }
+
+      span:hover {
+        color: #ca511d;
+        cursor: pointer;
+        -webkit-transition: all 0.2s;
+        border-bottom: 2px solid #df8159;
+      }
+    }
+  }
+
+  .mainSizeMini {
+    width: 1200px;
+    height: 100%;
+    // background-color: pink;
+    .TickerContainer {
+      width: 100%;
+      height: 100%;
+      // background-color: #174855;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      .TickerItem {
+        width: 100%;
+        height: 350px;
+        background-image: url(./4.png);
+        // background-color: #6C7193;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 40px 150px 0px 180px;
+        box-sizing: border-box;
+        display: flex;
+        margin-bottom: 20px;
+        .infLeft {
+          width: 65%;
+          height: 100%;
+          // background-color: aqua;
+          box-sizing: border-box;
+          padding: 10px 0px 0px 25px;
+          color: #552a17;
+          font-family: sans-serif;
+          h3 {
+            font-size: 30px;
+            color: #a62e02;
+            font-weight: bolder;
+            margin-bottom: 20px;
+          }
+          h4 {
+            font-size: 20px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+          }
+          h5 {
+            font-size: 16px;
+            color: rgb(145, 10, 10);
+          }
+        }
+
+        .infRight {
+          width: 35%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          font-weight: bolder;
+          color: black;
+        }
+      }
+    }
+  }
+}

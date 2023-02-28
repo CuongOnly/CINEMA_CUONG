@@ -1,0 +1,175 @@
+.SeatContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+.SeatMainSize {
+  width: 1200px;
+  height: auto;
+  display: flex;
+}
+.leftSeatBorder {
+  width: 900px;
+  min-height: 600px;
+  background-color: #f26b38;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.rightSeatBorder {
+  // padding: 20px;
+  // box-sizing: border-box;
+  width: 300px;
+  // height: auto;
+  // background-color: #0cbfca;
+}
+.seatTable {
+  margin-top: 10px;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 610px;
+  background-color: white;
+}
+.seatGrid {
+  width: 85%;
+  height: auto;
+}
+.seatGridContainer {
+  width: 100%;
+  min-height: 455px;
+  display: flex;
+  justify-content: center;
+}
+.ScreenCon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.Screen {
+  text-align: center;
+  border-bottom: 1px solid rgb(74, 74, 74);
+  width: 35%;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.SeatInfoContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.greensquare {
+  margin-right: 20px;
+}
+.redsquare {
+  margin-right: 20px;
+}
+.graysquare {
+  margin-right: 20px;
+}
+.bluesquare {
+  margin-right: 20px;
+}
+.greensquare:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #7dc71d;
+}
+.purplequare:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #5a38f2;
+}
+.redsquare:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #e11c01;
+}
+.graysquare:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #dbdee1;
+}
+.bluesquare:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #0cbfca;
+  margin-right: 5px;
+}
+.seatNumber {
+  background-color: rgb(231, 231, 231);
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.activeSeatNumber {
+  background-color: #7dc71d !important;
+  font-weight: bolder;
+  color: white;
+}
+.bookedSeatNumber {
+  background-color: #e11c01 !important;
+  font-weight: bolder;
+  color: white;
+  pointer-events: none !important;
+ }
+.seatNumberVIP {
+  background-color: #5a38f2;
+  cursor: pointer;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.columnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.seatLetter {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 3.5px;
+}
+.blockSeat {
+  background-color: #0cbfca !important;
+  color: white !important;
+  pointer-events: none !important;
+}

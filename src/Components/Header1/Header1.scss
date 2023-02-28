@@ -1,0 +1,219 @@
+.Header {
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 30%);
+  .mainSide {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    img {
+      margin-right: 100px;
+      cursor: pointer;
+      // width: 275px;
+    }
+    .menu {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 17px;
+      font-weight: bolder;
+
+      ul {
+        display: flex;
+        li {
+          display: inline-block;
+          margin-right: 40px;
+          a {
+            text-decoration: none;
+            color: black;
+            -webkit-transition: all 0.5s;
+          }
+          i {
+            font-size: 15px;
+            margin-left: 5px;
+            -webkit-transition: all 0.5s;
+          }
+          // a:hover {
+          //     color: rgb(255, 68, 68);
+          // }
+        }
+        li:hover a {
+          color: rgb(255, 68, 68);
+        }
+        li:hover {
+          color: rgb(255, 68, 68);
+        }
+        .film-li {
+          position: relative;
+          .FilmDropdown {
+            position: absolute;
+            left: -117px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            width: 800px;
+            height: auto;
+            background-color: white;
+            animation: growDown 300ms ease-in-out forwards;
+            .currentFilm {
+              width: 100%;
+              height: 50%;
+              box-sizing: border-box;
+              padding: 10px;
+              span {
+                border-bottom: 2px solid orangered;
+                color: black;
+              }
+              .currentFilmcontainer {
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin-top: 20px;
+                box-sizing: border-box;
+                // justify-content: space-between;
+                div {
+                  box-sizing: border-box;
+                  margin-right: 10px;
+                  width: 25%;
+                  height: 100%;
+                  div {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    img {
+                      cursor: pointer;
+                      width: 100%;
+                      height: auto;
+                      object-fit: cover;
+                      transition: 0.3s;
+                    }
+                    img:hover {
+                      transform: scale(1.1);
+                    }
+                  }
+                  p {
+                    color: black;
+                  }
+                }
+              }
+            }
+            .upcomingFilm {
+            }
+          }
+        }
+        .event-li {
+          // background-color: aqua;
+          position: relative;
+          .event {
+            animation: growDown 300ms ease-in-out forwards;
+            position: absolute;
+            width: 140px;
+            height: auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            text-align: center;
+            color: black;
+            p:hover {
+              cursor: pointer;
+              color: rgb(255, 68, 68);
+            }
+          }
+        }
+      }
+    }
+    .sign {
+      flex-grow: 1;
+      // background-color: rgb(208, 119, 119);
+      position: relative;
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        p {
+          color: rgb(97, 96, 96);
+          font-size: 16px;
+          font-weight: bolder;
+          margin: 0px 5px 0px 10px;
+        }
+      }
+      .popup-user {
+        display: flex;
+        position: absolute;
+        margin-top: -25px;
+        margin-right: -75px;
+        z-index: 100;
+        right: 0;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        height: auto;
+        padding: 10px 25px;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        animation: growDown 300ms ease-in-out forwards;
+        div {
+          display: flex;
+          height: auto;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          border-bottom: 2px solid lightgray;
+          p {
+            margin: 0px 0px 10px 0px;
+          }
+        }
+        h2 {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          margin-top: 10px;
+          color: rgb(47, 47, 47);
+          border-bottom: 2px solid lightgray;
+        }
+        .clear-h2 {
+          border: none;
+        }
+      }
+    }
+  }
+}
+.loginsignup {
+  width: 30%;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  span {
+    transition: 0.3s;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  span:hover {
+    color: crimson;
+    font-weight: bolder;
+    border-radius: 15px;
+  }
+}
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

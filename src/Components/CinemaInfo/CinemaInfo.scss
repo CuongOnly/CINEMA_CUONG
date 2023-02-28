@@ -1,0 +1,165 @@
+.CinemaInfoContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.CinemaInfoMainSize {
+  width: 1200px;
+  height: auto;
+}
+.ImageContainer {
+  width: 100%;
+  height: 189px;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  img {
+    min-width: 450px;
+    margin-left: 4px;
+    transition: 0.5s;
+  }
+}
+.prevbuttonTimeCinema {
+  position: absolute;
+  top: 35%;
+  left: 5px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+.nextbuttonTimeCinema {
+  position: absolute;
+  top: 35%;
+  right: 5px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+.CinemaFilmContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.LeftHandCinema {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.RightHandCinema {
+  width: 50%;
+  height: auto;
+}
+.ticketpricetitle {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.ticketpricetitle::after {
+  display: block;
+  width: 50px;
+  height: 2.5px;
+  margin-top: 8px;
+  content: "";
+  background-color: #f26b38;
+}
+.CinemaBanner {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mapGoogle {
+  width: 100%;
+  border: none;
+  height: 300px;
+}
+.DateFilmContainerInCinema {
+  width: 100%;
+  height: 100px;
+  border: 1px solid lightgray;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.DateFilmMainSizeInCinema {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.prevbuttonFilmCinema {
+  position: absolute;
+  top: 37%;
+  left: 3px;
+  cursor: pointer;
+}
+.nextbuttonFilmCinema {
+  position: absolute;
+  top: 37%;
+  right: 3px;
+  cursor: pointer;
+}
+.DateContainerinCinema {
+  min-width: 185px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  transition: 0.2s;
+  div {
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  div:hover {
+    background-color: #f26b38;
+    color: white;
+  }
+}
+.activeCinema {
+  background-color: #f26b38;
+  color: white;
+}
+.listFilmContainer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-top: 20px;
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+.avatarFilm {
+  width: 21.3%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.showtimeInfo {
+  max-width: 78.7%;
+}
+.ShowTime {
+  display: flex;
+  margin-top: 20px;
+}
+.ShowTimeContainer {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}

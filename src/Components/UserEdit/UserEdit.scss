@@ -1,0 +1,128 @@
+.userEditContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.userEditMainSize {
+  width: 1200px;
+  height: auto;
+  display: flex;
+}
+.fullname {
+  color: #2e3034;
+  border: 1px solid #ced0da;
+  width: 679px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.usernameedit {
+  color: #43464b;
+  background-color: #e9edf1;
+  border: 1px solid #ced0da;
+  width: 679px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.address {
+  color: #43464b;
+  border: 1px solid #ced0da;
+  width: 679px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.birthday {
+  color: #43464b;
+  border: 1px solid #ced0da;
+  width: 350px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.gender {
+  color: #43464b;
+  background-color: #e9edf1;
+  border: 1px solid #ced0da;
+  width: 300px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.userInfotitle {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.userInfotitle:hover {
+  border-bottom: 3px solid rgb(201, 90, 10);
+  color: rgb(201, 90, 10);
+}
+.LefthandUserEdit {
+  width: 700px;
+  height: auto;
+  input {
+    display: block;
+  }
+}
+.RighthandUserEdit {
+  width: 400px;
+  height: auto;
+}
+
+.changePasswordtitle {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.changePasswordtitle:hover {
+  border-bottom: 3px solid rgb(201, 90, 10);
+  color: rgb(201, 90, 10);
+}
+.buttonSaveEdit {
+  width: 100px;
+  background-color: rgb(228, 102, 11);
+  padding: 10px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.buttonSaveEdit:hover {
+  background-color: rgb(201, 90, 10);
+}
+.activeUserInfo {
+  border-bottom: 3px solid rgb(201, 90, 10);
+  color: rgb(201, 90, 10);
+}
+.currentPass {
+  color: #43464b;
+  border: 1px solid #ced0da;
+  width: 679px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}
+.NewPass {
+  color: #43464b;
+  border: 1px solid #ced0da;
+  width: 679px;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+}

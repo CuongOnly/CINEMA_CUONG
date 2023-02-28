@@ -1,0 +1,212 @@
+.PaymentContainer {
+  width: 66%;
+  height: auto;
+  padding: 10px;
+
+  .contentContainer {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    // background-color: aqua;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    .LeftHandPayment {
+      width: 50%;
+      height: 470px;
+      padding: 15px 30px 0px 0px;
+      box-sizing: border-box;
+      .ATMContainer {
+        width: 100%;
+        height: 230px;
+        border-radius: 10px;
+        // background-image: linear-gradient(to right, rgb(217, 0, 255), rgb(205, 93, 230));
+        // background-image: url('./1.png');
+        background-position: center;
+        background-size: cover;
+        .NameATM {
+          width: 100%;
+          height: 70px;
+          font-size: 20px;
+          font-weight: bolder;
+          padding-left: 20px;
+          padding-top: 40px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          h1 {
+            // color: rgb(221, 108, 198);
+            color: rgb(202, 82, 250);
+          }
+          img {
+            margin-right: 10px;
+            width: 60px;
+          }
+        }
+        .NumCard {
+          width: 100%;
+          height: 30px;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 30px;
+          color: rgb(0, 0, 0);
+          p {
+            text-align: start;
+            margin-left: 55px;
+            margin-top: -5px;
+            font-size: 12px;
+            font-weight: 900;
+          }
+        }
+        .UserInfo {
+          width: 100%;
+          height: 70px;
+          margin-top: 20px;
+          padding: 10px 0px 10px 30px;
+          box-sizing: border-box;
+          span {
+            font-size: 12px;
+          }
+          div {
+            .nameDay {
+              font-size: 8px;
+              font-weight: 900;
+              margin-right: 5px;
+            }
+            .day {
+              font-size: 15px;
+              font-weight: 900;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .RightHandPayment {
+      width: 50%;
+    }
+    .intContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      // background-color: rgb(157, 0, 255);
+      margin: 10px 0px 0px 0px;
+
+      select {
+        outline: none;
+        border: 1px solid lightgray;
+        color: rgb(75, 75, 75);
+        width: 400px;
+        height: 40px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      input {
+        border: 1px solid lightgray;
+        color: rgb(75, 75, 75);
+        width: 400px;
+        height: 40px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        outline: none;
+      }
+    }
+    .FooterPayment {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      .mainSizeFooter {
+        margin-left: 418px;
+        width: 400px;
+        height: 200px;
+        a {
+          background-color: #e26435;
+        }
+        a:hover {
+          background-color: #cd613a;
+        }
+        .apdung {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 15px 0px;
+        }
+        span {
+          display: block;
+          margin: 10px 0px;
+          font-size: 13px;
+        }
+        div {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          a {
+            display: block;
+            line-height: 50px;
+            text-decoration: none;
+            color: white;
+            width: 185px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.InfoFilmContainer {
+  width: 35%;
+  height: 100%;
+}
+.intContainer {
+  button {
+    width: 98%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f26b38;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.expireday {
+  width: 40%;
+}
+.CVV {
+  width: 40%;
+}
+.intContainerexpire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 50px;
+  input {
+    border: 1px solid lightgray;
+    color: rgb(75, 75, 75);
+    height: 40px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 47%;
+    outline: none;
+  }
+}

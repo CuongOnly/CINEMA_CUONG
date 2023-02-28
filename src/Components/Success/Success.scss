@@ -1,0 +1,69 @@
+.Success {
+    width: 100%;
+    height: 35vh;
+    margin: 50px 0px 100px 0px;
+    box-sizing: border-box;
+    .title-suc {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .h1-suc {
+            position: relative;
+            font-size: 5rem;
+            font-family: sans-serif;
+            -webkit-text-stroke: 0.2vw #181B23;
+            // color: blue;
+            text-transform: uppercase;
+        }
+        .h1-suc::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            color: orangered;
+            // -webkit-text-stroke: 0vw #383d52;
+            border-right: 2px solid orangered;
+            overflow: hidden;
+            // animation: animate 1s linear infinite;
+            -webkit-animation: animate 8s linear infinite;
+        }
+    }
+    .btnContainer {
+        width: 100%;
+        height: 100px;
+        // background-color: #6C7193;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 0px 20px;
+            display: block;
+            text-decoration: none;
+            background-color: orangered;
+        }
+        a:hover {
+            // color: orangered;
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+@keyframes animate{
+    0% {
+        width: 0;
+    }
+    70% {
+        width: 100%;
+    }
+}

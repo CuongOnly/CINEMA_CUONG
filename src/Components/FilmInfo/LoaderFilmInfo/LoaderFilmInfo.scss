@@ -1,0 +1,29 @@
+.LoaderFilmInfoContainer {
+  width: 100%;
+  position: absolute;
+  height: 589px;
+  top: 54px;
+  border-radius: 5px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(241, 241, 241, 0.5);
+}
+.FilmInfoLoader {
+  border: 5px solid #ffffff; /* Light grey */
+  border-top: 5px solid #ca5c2d; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,186 @@
+.Ticker {
+  width: 100%;
+  height: auto;
+  // background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  .mainSize {
+    width: 1300px;
+    height: 100%;
+    margin-left: 100px;
+    // background-color: aqua;
+    display: flex;
+    .TickerContainer {
+      width: 70%;
+      height: 100%;
+      background-color: #f26b38;
+      padding: 10px;
+      h1 {
+        height: 50px;
+        color: white;
+        font-size: 25px;
+      }
+      .FullTable {
+        width: 100%;
+        height: 100%;
+        background-color: #47251c;
+        table {
+          border-collapse: collapse;
+          thead {
+            color: white;
+            tr {
+              th {
+                padding: 5px 10px;
+              }
+              .tbth1 {
+                text-align: start;
+                min-width: 400px;
+              }
+              .tbth2 {
+                text-align: center;
+                width: 180px;
+              }
+              .tbth3 {
+                text-align: end;
+                width: 130px;
+              }
+              .tbth4 {
+                text-align: end;
+                width: 130px;
+              }
+            }
+          }
+          tbody {
+            background-color: white;
+            color: #43464b;
+            tr {
+              td {
+                padding: 10px;
+                box-sizing: border-box;
+                .comboContainer {
+                  font-size: 12px;
+                  padding: 10px;
+                  box-sizing: border-box;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .tdSoLuong {
+                div {
+                  margin-left: 10%;
+                  width: 80%;
+                  height: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  span {
+                    line-height: 40px;
+                    button {
+                      border: none;
+                      i {
+                        font-size: 20px;
+                        background-color: white;
+
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                  a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 30px;
+                    border: 1px solid lightgray;
+                  }
+                  a:focus {
+                    outline: none !important;
+                    border: 2px solid #66afe9;
+                    // padding: 2px;
+                    -webkit-transition: all 0.5s;
+                    // border-color: #66afe9 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.disableButton {
+  color: rgb(122, 122, 122);
+}
+.TotalRender {
+  span {
+    color: #f26b38;
+    font-weight: bolder;
+  }
+}
+.PopupNotEnoughticket {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: rgb(79, 79, 79, 0.6);
+  top: 0;
+  .PopupNotEnoughTicketContainer {
+    width: 450px;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    p {
+      color: rgb(118, 118, 118);
+      font-weight: bolder;
+      margin-top: 30px;
+    }
+    .buttoncontainer {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        padding: 13px 38px;
+        background-color: #f26b38;
+        color: white;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 18px;
+      }
+      button:hover {
+        background-color: #f35218;
+      }
+    }
+  }
+  .Popupheader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    span {
+      font-size: 27px;
+      margin-top: 15px;
+      font-weight: bolder;
+      color: #f26b38;
+    }
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

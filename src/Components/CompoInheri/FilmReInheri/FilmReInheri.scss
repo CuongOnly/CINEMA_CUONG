@@ -1,0 +1,62 @@
+.FilmReInheri {
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+    h3 {
+        font-size: 25px;
+    }
+    .FilmReContainer {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        .FilmReOver {
+            width: 100%;
+            height: 200px; 
+            margin-bottom: 20px;
+            .FilmReItem {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                align-items: end;
+                background-size: contain;
+                background-position: center;
+                .TitleCon {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h4 {
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+            .FilmReItem:hover .TitleCon{
+                -webkit-transition-duration: 0.3s;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    .More {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            border: none;
+            background-color: orangered;
+            padding: 7px 13px;
+            font-size: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+        a:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+}

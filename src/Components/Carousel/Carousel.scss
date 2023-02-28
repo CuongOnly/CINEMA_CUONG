@@ -1,0 +1,72 @@
+.carouselContainer {
+  z-index: 1;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  a {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    padding: 10px;
+  }
+  a:hover {
+    background: rgb(66, 66, 66);
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .dot {
+    border-radius: 50%;
+    background: #bbb;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  .fade {
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  div {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 800px;
+  }
+}
+.mySlide {
+  display: none;
+}
+.active {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.activeDot {
+  transition: 0.4s;
+  background: #ee4126 !important;
+}
+.prevBanner {
+  top: 50%;
+  left: 0px;
+}
+
+.nextBanner {
+  top: 50%;
+  right: 0px;
+}

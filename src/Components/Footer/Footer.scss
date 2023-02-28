@@ -1,0 +1,113 @@
+.Footer {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 50px;
+  background-image: url("./FooterIMG/bg-grid.jpg");
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 1;
+  position: relative;
+  .logo {
+    width: 100%;
+
+    p {
+      text-align: center;
+      img {
+        border-radius: 50%;
+        width: 150px;
+        margin-top: -72px;
+      }
+      img:hover {
+        animation: app-logo-spin backwards 1s alternate;
+
+        @keyframes app-logo-spin {
+          to {
+            transform: rotate(360deg);
+          }
+          from {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+  .content {
+    margin-top: 20px;
+    width: 100%;
+    height: 240px;
+    // background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    color: #bbbbb1;
+
+    .card {
+      width: 20%;
+      height: 100%;
+      // background-color: aqua;
+      h2:hover {
+        color: rgb(255, 135, 88);
+      }
+      ul {
+        margin-top: 20px;
+        line-height: 40px;
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: #bbbbb1;
+            text-decoration: none;
+            transition: 0.3s;
+          }
+          a:hover {
+            color: rgb(255, 135, 88);
+          }
+        }
+      }
+    }
+    hr {
+      margin-left: 100px;
+    }
+    .marHr {
+      padding-left: 50px;
+
+      .iconItem {
+        margin: 20px 0px;
+        height: 50px;
+        // background-color: aqua;
+        i {
+          margin-right: 15px;
+          color: #bbbbb1;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        i:first-child:hover {
+          color: rgb(57, 57, 255);
+        }
+        i:nth-child(2):hover {
+          color: rgb(211, 0, 0);
+        }
+        i:nth-child(3):hover {
+          color: rgb(255, 135, 88);
+        }
+      }
+      .iconItem2 {
+        margin: 20px 0px;
+        height: 50px;
+        i {
+          margin-right: 15px;
+          color: #bbbbb1;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        i:first-child:hover {
+          color: rgb(48, 251, 30);
+        }
+        i:nth-child(2):hover {
+          color: rgb(211, 0, 204);
+        }
+      }
+    }
+  }
+}
